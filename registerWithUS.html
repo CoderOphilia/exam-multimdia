@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css"/>
+</head>
+
+<body>
+
+    <form id="survey" action="http://www.abc@gmail.com" method="post">
+        <fieldset id="custInfo">
+            <legend>Customer Information</legend>
+
+            <div class="formRow">
+                <label for="name">Name*</label>
+                <input name="custName" id="name" type="text" placeholder="Please eneter your name" />
+
+            </div>
+
+            <div class="formRow">
+                <label for="address">Street Address</label>
+                <input name="address" id="address" type="text" placeholder="Please eneter your address" />
+            </div>
+
+            <div class="formRow">
+                <label for="city">City*</label>
+                <input name="custName" value="Vancouver" id="city" type="text" placeholder="Please eneter your name" />
+            </div>
+
+            <div class="formRow">
+                <label for="order">Nearest Community Center</label>
+                <select name="orderType" id="order">
+                    <option value="order1">Hastings</option>
+                    <option value="order2">Hillcrest</option>
+                    <option value="order3">Killarney</option>
+                    <option value="order4">Douglas Park</option>
+                    <option value="order5">Coal Harbour</option>
+                    <option value="order6">Dunbar</option>
+                </select>
+            </div>
+
+            <div class="formRow">
+                <label for="info">How did you hear about us?</label>
+                <select name="orderType" id="info" size="3" multiple>
+                    <option value="mag">Magazine</option>
+                    <option value="news">Newspaper</option>
+                    <option value="word">Word of mouth</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <input name="mailMe" id="mailCB" type="checkbox"/>
+            <label for="mailCB">Add me to the mailing list</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Customer Experience</legend>
+
+            <div class="formRow">
+                <label for="name">One a Scale of 1-5, how do you rate us!!</label>
+                <input name="custName" id="name" step="1" min="0" max="5" type="number"  placeholder="Rating" />
+            </div>
+
+            <div class="formRow">
+                <label for="name">Was your service friendly?</label>
+                <fieldset>
+                    <label for="fYes">YES</label>
+                    <input name="sFriend" id="fYes" value="yes" type="radio"/>
+                    <label for="fNo">No</label>
+                    <input name="sFriend" id="fNo" value="no" type="radio"/>
+                </fieldset>
+            </div>
+
+            <div class="formRow">
+                <label for="name">Share Your experinece</label>
+                <textarea name="customerExp" id="commBox"></textarea>
+            </div>
+
+            <div class="formRow">
+                <label for="visit">Date of Visit</label>
+                <input name="Visitdate" id="visit" type="date"/>
+            </div>
+
+        </fieldset>
+
+       
+    </form>
+
+</body>
+
+</html>
